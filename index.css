@@ -1,4 +1,31 @@
 body {
-    background-color: #FFBA00;
+    margin: 0;
+    padding: 2rem 0;
+    width: 100%;
+    background: #FFBA00;
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
 }
 
+main {
+    background: white;
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 2rem 0;
+  }
+
+  /* h1 {
+    display: block;
+    font-size: 2em;
+    margin: 
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+} */
+
+h1 {
+    margin: 3rem 1rem 6rem 1rem;
+}
