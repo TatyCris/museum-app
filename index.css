@@ -13,18 +13,7 @@ main {
     margin: auto;
     border-radius: 5px;
     padding: 2rem 0;
-  }
-
-  /* h1 {
-    display: block;
-    font-size: 2em;
-    margin: 
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-} */
+}
 
 h1 {
     margin: 3rem 1rem 6rem 1rem;
@@ -41,4 +30,9 @@ h1 {
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
+}
+
+footer {
+    margin: 3rem;
+    font-size: 1.2rem;
 }
