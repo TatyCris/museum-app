@@ -17,14 +17,34 @@ function submitComment() {
     comment.appendChild(h3);
     comment.appendChild(p);
 
+    //Reset form values
+    function reset () {
+        inputField.value = null;
+        textArea.value = null;        
+    }
+
     //Display elements on the page
-    const commentSection = document.getElementById("comments");
-    commentSection.appendChild(comment);
-
-    //reset form values
-    inputField.value = null;
-    textArea.value = null;
-
+    function displayOnPage () {
+        const commentSection = document.getElementById("comments");
+        commentSection.appendChild(comment);
+    }
     
-  }
+    function doesNotPassAllValidations (name, msg) {
+        // Check empty inputs
+        if (!name || !msg) {
+            alert('You forgot to fill in your name or message!');
+            return true;  
+        } else if (msg.length > 280) {
+            alert('Your comment is too long!');
+            return true;
+        }
+        return false;
+    }
 
+    if(doesNotPassAllValidations(name, msg)){
+        return null
+    } else {
+        reset();
+        displayOnPage();
+    }
+}
